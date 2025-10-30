@@ -18,4 +18,17 @@ app.use(express.static('public'))
 app.use(cookieParsar())
 
 
+// routes import
+
+import userRouter from "../src/routes/user.routes.js";
+
+
+
+// routes declartion
+
+app.use("/api/v1/users", userRouter);
+
+
+ 
+
 export { app }
