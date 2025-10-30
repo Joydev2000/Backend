@@ -74,7 +74,8 @@ userSchema.methods.genartateAccessToken = async function (){
        
     )
 }
-userSchema.methods.genartateRefreshToken =async function (){
+
+userSchema.methods.genartateRefreshToken = async function (){
     return await jwt.sign(
         {
         _id: this._id
