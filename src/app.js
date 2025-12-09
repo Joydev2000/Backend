@@ -25,10 +25,15 @@ import userRouter from "../src/routes/user.routes.js";
 
 
 // routes declartion
-
 app.use("/api/v1/users", userRouter);
 
 
- 
+
+
+
+// Home route
+app.get("/", (req, res) => {
+  res.send("Welcome Joydev Backend API_1.0!");
+}); 
 
 export { app }
